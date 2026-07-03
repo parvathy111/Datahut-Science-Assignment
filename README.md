@@ -5,7 +5,7 @@ PROBLEM 1 : The objective was to scrape product data from the Adidas Men's Footw
 
 PROBLEM 2 : The raw data was loaded into Pandas for cleaning and validation. An initial EDA was performed to check for missing values, duplicate records, and data types. Since the price values were extracted from the embedded JSON, they were already in numeric format and required no additional cleaning. New columns : discount_amount and discount_pct, were created, followed by data validation checks such as identifying missing values, verifying that the sale price was not greater than the MRP, and counting full-price and discounted products. Finally, the cleaned dataset was saved as ‘products_clean.csv’.
 
-PROBLEM 3 : 3 is to analyse the cleaned data. For that first I load the the cleaned data file using pandas. 
+PROBLEM 3 : It is to analyse the cleaned data. For that first I load the the cleaned data file using pandas. 
 1. Analysed the catalogue by calculating: 
 - Total number of products 
 - Full-price and discounted products 
