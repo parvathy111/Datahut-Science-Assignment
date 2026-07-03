@@ -1,5 +1,5 @@
 # Datahut-Science-Assignment
-1.	Overall approaches to 3 Problems:
+#1. Overall approaches to 3 Problems:
 
 PROBLEM 1 : The objective was to scrape product data from the Adidas Men's Footwear website. Initially, I attempted to use BeautifulSoup with direct HTTP requests, but I got HTTP 403 (Forbidden) due to the website's anti-bot protection. I then used Selenium to load the webpage and BeautifulSoup to parse the HTML. The product information was extracted from the embedded __NEXT_DATA__ JSON object. Pagination was implemented to scrape all products across multiple pages, and a 2-second delay was added between requests for responsible scraping. The collected data was saved as ‘products_raw.csv’.
 
@@ -29,15 +29,15 @@ PROBLEM 3 : 3 is to analyse the cleaned data. For that first I load the the clea
 - Bar Chart of Discount by Sub-brand
 - Scatter Plot of MRP vs. Discount Percentage
 
-2. How you determined whether the site was static or dynamic?
+# 2. How you determined whether the site was static or dynamic?
 I determined that the website was dynamic because the product details were not available as normal HTML elements. Instead, they were stored in the embedded __NEXT_DATA__ JSON object after the page was rendered. Additionally, direct HTTP requests returned HTTP 403, so I used Selenium to render the page before scraping.
 
-3. Challenges faced (pagination, price parsing, CAPTCHAs, dynamic content) and how you handled them.
+# 3. Challenges faced (pagination, price parsing, CAPTCHAs, dynamic content) and how you handled them.
 - Pagination: The catalogue spanned multiple pages. I automated pagination by increasing the start parameter by 48 until no more products were returned.
 - Price Parsing: Products had either both Sale Price and MRP or only a single price. If no sale price was available, I treated the MRP as the sale price.
 - Dynamic Content: Product data was stored in the embedded __NEXT_DATA__ JSON object, and direct HTTP requests returned HTTP 403 (Forbidden). I used Selenium to render the page and BeautifulSoup to extract the data.
 
-4. For Problem 3: your analysis write-up — the most interesting pricing/discount findings, your
+# 4. For Problem 3: your analysis write-up — the most interesting pricing/discount findings, your
 outlier method and why you chose it, and the statistical choices you made.
 
 Key Findings :
@@ -54,7 +54,7 @@ Statistical Methods :
 - correlation – measured the relationship between price and discount.
 - IQR – detected pricing outliers. 
 
-5. Any limitations or assumptions in your solution.
+# 5. Any limitations or assumptions in your solution.
 Assumptions : The scraped product and price data were accurate at the time of scraping. The analysis is based only on the Men's Footwear category and does not represent other Adidas categories.
  
 Limitations : The results are based on the current product catalogue and may vary as Adidas updates its pricing and discount strategies. The scraper does not include retry or recovery mechanisms, so it may stop if an unexpected error occurs during scraping.
