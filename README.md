@@ -42,10 +42,12 @@ I determined that the website was dynamic because the product details were not a
 Key Findings :
 - Discounts mainly clustered at 30%, 40%, and 50%.
 - Men Performance, Men Sportswear and Men TERREX had the highest median discounts.
-- MRP and discount percentage showed a weak negative correlation (-0.264). 
+- MRP and discount percentage showed a weak negative correlation (-0.264).
+  
 Outlier Method :
 - Used the IQR method because it is robust to extreme values and does not assume normality.
-- No pricing outliers were found. 
+- No pricing outliers were found.
+  
 Statistical Methods :
 - Descriptive statistics – To summarized the dataset.
 - Group-by analysis – compared sub-brands.
