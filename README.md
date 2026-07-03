@@ -7,11 +7,11 @@ PROBLEM 2 : The raw data was loaded into Pandas for cleaning and validation. An 
 
 PROBLEM 3 : 3 is to analyse the cleaned data. For that first I load the the cleaned data file using pandas. 
 1. Analysed the catalogue by calculating: 
-•	Total number of products 
-•	Full-price and discounted products 
-•	Share of products on sale 
-•	Summary statistics (Mean, Median, Standard Deviation) for MRP, Sale Price, and Discount Percentage. 
-•	Examined the discount distribution and found that discounts were clustered around common values (30%, 40%, and 50%) rather than being evenly distributed.
+- Total number of products 
+- Full-price and discounted products 
+- Share of products on sale 
+- Summary statistics (Mean, Median, Standard Deviation) for MRP, Sale Price, and Discount Percentage. 
+- Examined the discount distribution and found that discounts were clustered around common values (30%, 40%, and 50%) rather than being evenly distributed.
 
 2. Grouped products by Brand / Sub-brand to compare: 
 •	Number of products 
