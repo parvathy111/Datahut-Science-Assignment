@@ -1,5 +1,5 @@
 # Datahut-Science-Assignment
-#1. Overall approaches to 3 Problems:
+### 1. Overall approaches to 3 Problems:
 
 PROBLEM 1 : The objective was to scrape product data from the Adidas Men's Footwear website. Initially, I attempted to use BeautifulSoup with direct HTTP requests, but I got HTTP 403 (Forbidden) due to the website's anti-bot protection. I then used Selenium to load the webpage and BeautifulSoup to parse the HTML. The product information was extracted from the embedded __NEXT_DATA__ JSON object. Pagination was implemented to scrape all products across multiple pages, and a 2-second delay was added between requests for responsible scraping. The collected data was saved as ‘products_raw.csv’.
 
