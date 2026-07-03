@@ -37,8 +37,7 @@ I determined that the website was dynamic because the product details were not a
 - Price Parsing: Products had either both Sale Price and MRP or only a single price. If no sale price was available, I treated the MRP as the sale price.
 - Dynamic Content: Product data was stored in the embedded __NEXT_DATA__ JSON object, and direct HTTP requests returned HTTP 403 (Forbidden). I used Selenium to render the page and BeautifulSoup to extract the data.
 
-### 4. For Problem 3: your analysis write-up — the most interesting pricing/discount findings, your
-outlier method and why you chose it, and the statistical choices you made.
+### 4. For Problem 3: your analysis write-up — the most interesting pricing/discount findings, your outlier method and why you chose it, and the statistical choices you made.
 
 Key Findings :
 - Discounts mainly clustered at 30%, 40%, and 50%.
